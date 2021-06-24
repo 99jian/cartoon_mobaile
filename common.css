@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; } 
+body {
+ color:#666;
+ font-size:14px;
+ font-family:'나눔고딕', NanumGothic, ng, sans-serif; }
+img, fieldset { border:0 }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ background:url(none);
+ -webkit-border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden{display: none;}
+html, body, #wrap, .hidden{max-width: 100%; overflow-x: hidden;}
+/*#skipNav*/
+#skipNav{position:relative;width:100%;overflow:hidden}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:14px}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block;height:auto;padding:10px 0; background:#f2f2f2}
+
+
+/* layout */
+#wrap{overflow-x: hidden;width: 100%;background-color: #fff6ed;}
+
+/* #header */
+#header{width: 100%;}
+
+#header>.header_inner{}
+#header>.header_inner>.header_box{overflow: hidden;position: relative;z-index: 90; background-color: #ffb83c;border-radius: 0 0 40px 40px;}
+
+#header .header_box #logo{float: left;width: 20%;margin-left: 40%;}
+#header .header_box #logo>a{display: block;margin-top: 5px;} 
+#header .header_box #logo>a>img{display: block;width: 100%;}
+
+#header .header_box .menu_icon{float: left;width: 16%;margin-left: 20%;}  
+#header .header_box .menu_icon>a{display: block;width: 40px;height: 40px; padding: 5px;padding-top: 13px; text-indent: -9999px; background-image: url(../imgs/menu.png);background-repeat: no-repeat;background-position: center;}
+
+#header #gnb{position: absolute;z-index: 88;top: -100%;width: 100%; background-color:#ffcc74;border-radius: 0 0 40px 40px;}
+
+#header #gnb span.log_in{display: block;position: absolute;width: 125px;height: 45px;top: 12%;left: 20px;}
+#header #gnb span.log_in>a{display: block;width: 125px;height: 45px; text-indent: -9999px; background-image: url(../imgs/login.png);background-repeat: no-repeat;background-position:center;}
+
+#header #gnb span.search_box{display: block;position: relative; top: 90px;left: 25%;}
+#header #gnb span.search_box>.search{}
+#header #gnb span.search_box .search_icon{}
+
+#header #gnb span.close_btn{display: block;position: absolute;bottom: 5px;right:38%; width: 19%;}  
+#header #gnb span.close_btn>a{display: block;width: 40px;height: 40px;padding:5px;padding-top: 22px; text-indent: -9999px;background-image: url(../imgs/close.png);background-repeat: no-repeat; background-position: center; }
+
+#header #gnb ul.main_menu{width: 100%;height: 380px; margin-top: 110px;padding-left: 10%;box-sizing: border-box;}
+#header #gnb ul.main_menu>li{}
+#header #gnb ul.main_menu>li>a{}
+#header #gnb ul.main_menu>li>a.depth{display: block;width: 100%;height: 40px;line-height: 40px;font-weight: bold; font-size: 5vw;color: #fff;}
+
+#header #gnb ul.sub_menu{display: none;border-top: 1.5px solid #ffffff;border-bottom: 1.5px solid #ffffff;text-indent: 10%;}
+#header #gnb ul.sub_menu>li{}
+#header #gnb ul.sub_menu>li>a{display: block;width: 100%;height: 40px;line-height: 40px; font-size: 4.5vw;color: #fff;}
+
+/* footer */
+#footer .footer_inner{background-color: #ffc478;}
+#footer .footer_inner .footer_btn{width: 100%;overflow: hidden;padding-top: 10px;padding-left: 7%;box-sizing: border-box;}
+#footer .footer_inner .footer_btn>a{display: block;float: left;width: 30%;height: 34px;border: 1px solid #fff;margin-right: 2%;box-sizing: border-box;letter-spacing: -1px;box-shadow:0 1px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.15);-moz-box-shadow:0 1px 0 rgba(0,0,0,0.1);text-align: center;color: #fff;line-height: 34px;border-radius: 10px;}
+#footer .footer_inner .footer_logo{width: 28%;margin:3px auto;}
+#footer .footer_inner .footer_logo>a{display: block;}
+#footer .footer_inner .footer_logo>a>img{display: block;width: 100%;}
+#footer .footer_inner .footer_copy p{text-align: center;color: #fff;line-height: 24px;}

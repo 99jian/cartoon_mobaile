@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>카툰네트워크</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+    <!-- swiper slide css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!-- js -->
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <!-- jquery 호환성 js -->
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <!-- 모바일 gnb js -->
+    <script src="common/js/m_gnb.js"></script>
+    <!-- swiper slide js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="index.html"><img src="common/imgs/logo.png" alt="로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0);">메뉴아이콘</a></span>
+                </div>
+                <nav id="gnb">
+                    <span class="log_in"><a href="javascript:void(0);">로그인</a></span>
+                    <span class="search_box">
+                        <form action="#" class="search">
+                            <fieldset>
+                                <legend class="hidden">내부 검색창</legend>
+                                    <input type="text" placeholder="검색어를 입력해주세요.">
+                                    <input type="image" src="common/imgs/search.png" class="search_icon">
+                            </fieldset>
+                        </form>
+                    </span>
+                    <span class="close_btn"><a href="javascript:void(0);">닫기버튼</a></span>
+                    <ul class="main_menu">
+                        <li><a href="javascript:void(0);"  class="depth">언어선택</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">영어 English 英語</a></li>
+                                <li><a href="#">중국어 Chinese 中国語</a></li>
+                                <li><a href="#">일본어 Japanese 日語</a></li>
+                                <li><a href="sub1/sub1_4.html">찾아오는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">인기시리즈</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">스티븐유니버스</a></li>
+                                <li><a href="#">파워퍼프걸</a></li>
+                                <li><a href="#">톰과제리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">프로그램 안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">전체 프로그램</a></li>
+                                <li><a href="#">이달의 프로그램</a></li>
+                                <li><a href="#">방영중 프로그램</a></li>
+                                <li><a href="#">방송편성표</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">새소식</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">진행중인 이벤트</a></li>
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="visual" class="swiper-container mySwiper1">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="imgs/visual.png" alt="가필드 슬라이드이미지"></li>
+                <li class="swiper-slide"><img src="imgs/visual02.png" alt="파워퍼프걸 슬라이드이미지"></li>
+                <li class="swiper-slide"><img src="imgs/visual03.png" alt="스티븐유니버스 슬라이드이미지"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <img src="common/imgs/up_icon.png"class="up" alt="올리라는 이미지">
+        <section id="container">
+            <h2 class="hidden">콘텐츠영역</h2>
+            <article class="movie_slide swiper-container mySwiper2">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="imgs/movie.png" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/movie02.png" alt=""></a></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </article>
+            <article class="sns">
+                <ul>
+                    <li class="tw"><a href="#">트위터</a></li>
+                    <li class="fb"><a href="#">페이스북</a></li>
+                    <li class="ig"><a href="#">인스타그램</a></li>
+                    <li class="yt"><a href="#">유튜브</a></li>
+                </ul>
+            </article>
+            <article class="program">
+                <ul>
+                    <li><a href="#">파워퍼프걸 프로그램 배경 이미지</a></li>
+                    <li><a href="#"><img src="imgs/program_card.png" alt="파워퍼프걸카드형이미지"></a></li>
+                </ul>
+                <div class="text_box">
+                <h4>파워퍼프걸</h4>
+                <h5>Power Puff Girl<br>パワーパフガール</h5>
+                <p>설탕, 양념, 온갖 좋은 것들.<br>
+                    그것이 완벽한 소녀를 만들기 위해 선택된 재료였다.<br>
+                    그러나 유토니움 박사는 실험을 하던 도중에 사고로 <br>
+                    화합물 X라는 물질을 집어넣게 된다. 그 결과 탄생한 <br>
+                    파워퍼프걸! 초강력 파워를 자랑하는 블라섬, 버블, 버터컵은 <br>
+                    악의 무리를 물리치고 지구를 지키기 위해 오늘도 싸우고 있다</p>
+                <a href="#"><img src="imgs/program_more.png" alt="자세히보기 이미지"></a>
+                </div>
+                <a href="#"><img src="imgs/program_btn.png" alt="전체보기버튼이미지"></a>
+            </article>
+            <article class="event swiper-container mySwiper3">
+                <h3 class="ct_tit"><img src="imgs/ev_tit.png" alt="이벤트 제목이미지"></h3>
+                <img src="imgs/ev_bgi.png" alt="이벤트 배경이미지">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="imgs/ev.png" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/ev02.png" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="imgs/ev03.png" alt=""></a></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </article>
+            <article class="news">
+                <h3>제목이미지</h3>
+                <div class="new_box">
+                    <ul>
+                        <li><a href="#"><img src="imgs/news02.png" alt="명절위비베어스이미지"></a></li>
+                        <li><a href="#"><img src="imgs/news03.png" alt="할머니위비베어스이미지"></a></li>
+                        <li><a href="#"><img src="imgs/news04.png" alt="여행상품모음전 광고이미지"></a></li>
+                        <li><a href="#"><img src="imgs/news05.png" alt="cgv위비베어스 무드등콤보이미지"></a></li>
+                    </ul>
+                    <button type="button">GO</button>
+                </div>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_btn">
+                    <a href="#" class="pc">PC버전</a>
+                    <a href="#" class="top">TOP</a>
+                    <a href="#" class="broadcasting_schedule">편성표</a>
+                </div>
+                <div class="footer_logo">
+                    <a href="#"><img src="common/imgs/footer_logo.png" alt="푸터로고이미지"></a>
+                </div>
+                <div class="footer_copy">
+                    <p>Use of this site signifies your agreement to the Terms of Use.<br>
+                        TM & ⓒ 2021 Cartoon Network. A WarnerMedia Company.<br>All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- visual slide js -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          initialSlide: 0,
+          autoplay:{delay:2500,},
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+        /* movie */
+        var swiper = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+      /* event */
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>
